@@ -31,7 +31,7 @@ function check_the_norm()
 	fi
 }
 
-make clean > /dev/null && make > /dev/null && make 2> ./tests/results/warnings.txt
+make clean > /dev/null && make > /dev/null && make 2> ./tests/results/warnings.txt 
 
 print_big_banner "FT PRINTF TESTER"
 
