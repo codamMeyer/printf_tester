@@ -1,0 +1,90 @@
+Test   7 (pct_5w) : FAILED.
+    First line of code: {return test("%5%");}
+      expected output : "    %"
+      your output     : "%"
+      expected (nonprintable as hex) : "    %"
+      actual   (nonprintable as hex) : "%"
+
+Test   8 (pct_5wlj) : FAILED.
+    First line of code: {return test("%-5%");}
+      expected output : "%    "
+      your output     : "%"
+      expected (nonprintable as hex) : "%    "
+      actual   (nonprintable as hex) : "%"
+
+Test   9 (pct_5wzp) : FAILED.
+    First line of code: {return test("%05%");}
+      expected output : "0000%"
+      your output     : "%"
+      expected (nonprintable as hex) : "0000%"
+      actual   (nonprintable as hex) : "%"
+
+Test  10 (pct_5wljzp) : FAILED.
+    First line of code: {return test("%-05%");}
+      expected output : "%    "
+      your output     : "%"
+      expected (nonprintable as hex) : "%    "
+      actual   (nonprintable as hex) : "%"
+
+Test  91 (s_prec_03_no_width_s_null) : FAILED.
+    First line of code: {return test("%.03s", NULL);}
+      expected output : "(nu"
+      your output     : "(null)"
+      expected (nonprintable as hex) : "(nu"
+      actual   (nonprintable as hex) : "(null)"
+
+Test  99 (s_prec_0_width_3_s_null) : FAILED.
+    First line of code: {return test("%3.s", NULL);}
+      expected output : "   "
+      your output     : "(null)"
+      expected (nonprintable as hex) : "   "
+      actual   (nonprintable as hex) : "(null)"
+
+Test 100 (s_prec_0_width_10_s_null) : FAILED.
+    First line of code: {return test("%10.s", NULL);}
+      expected output : "          "
+      your output     : "    (null)"
+      expected (nonprintable as hex) : "          "
+      actual   (nonprintable as hex) : "    (null)"
+
+Test 106 (s_prec_0_lj_width_3_s_null) : FAILED.
+    First line of code: {return test("%-3.s", NULL);}
+      expected output : "   "
+      your output     : "(null)"
+      expected (nonprintable as hex) : "   "
+      actual   (nonprintable as hex) : "(null)"
+
+Test 107 (s_prec_0_lj_width_8_s_null) : FAILED.
+    First line of code: {return test("%-8.s", NULL);}
+      expected output : "        "
+      your output     : "(null)  "
+      expected (nonprintable as hex) : "        "
+      actual   (nonprintable as hex) : "(null)  "
+
+Test 113 (s_prec_1_width_3_s_null) : FAILED.
+    First line of code: {return test("%3.1s", NULL);}
+      expected output : "  ("
+      your output     : "(null)"
+      expected (nonprintable as hex) : "  ("
+      actual   (nonprintable as hex) : "(null)"
+
+Test 114 (s_prec_1_width_9_s_null) : FAILED.
+    First line of code: {return test("%9.1s", NULL);}
+      expected output : "        ("
+      your output     : "   (null)"
+      expected (nonprintable as hex) : "        ("
+      actual   (nonprintable as hex) : "   (null)"
+
+Test 117 (s_prec_1_lj_width_3_s_null) : FAILED.
+    First line of code: {return test("%-3.1s", NULL);}
+      expected output : "(  "
+      your output     : "(null)"
+      expected (nonprintable as hex) : "(  "
+      actual   (nonprintable as hex) : "(null)"
+
+Test 118 (s_prec_1_lj_width_9_s_null) : FAILED.
+    First line of code: {return test("%-9.1s", NULL);}
+      expected output : "(        "
+      your output     : "(null)   "
+      expected (nonprintable as hex) : "(        "
+      actual   (nonprintable as hex) : "(null)   "
